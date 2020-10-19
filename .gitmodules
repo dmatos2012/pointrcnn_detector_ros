@@ -1,0 +1,3 @@
+[submodule "src/PointRCNN"]
+	path = src/PointRCNN
+	url = https://github.com/dmatos2012/PointRCNN.git
