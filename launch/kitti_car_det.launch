@@ -1,0 +1,14 @@
+<launch>
+<node name="kittibag" pkg="rosbag" type="play" args="-l --clock $(find prcnn_ros)/data/kitti_2011_09_26_drive_0011_synced.bag" />
+<node name="detection" pkg="prcnn_ros" type="detection.py" args="--model $(find prcnn_ros)/src/PointRCNN/tools/PointRCNN.pth 
+--calib $(find prcnn_ros)/data/0000.txt" output="screen" />
+<!-- rviz -->
+<arg name ="rviz" default="true" />
+<arg name ="rviz_file" default="$(find prcnn_ros)/config/default_display.rviz"/>
+<node pkg ="rviz" type="rviz" name="rviz" output="screen" args= "-d $(arg rviz_file)" if="$(arg rviz)"/>
+
+</launch>
+
+
+
+
