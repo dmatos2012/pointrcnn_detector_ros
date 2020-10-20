@@ -67,7 +67,7 @@ Launch visualization with
 `roslaunch prcnn_ros kitti_car_det.launch`
 
 # Acknowledgements
-[PointRCNN](https://github.com/sshaoshuai/PointRCNN) for the amazing object detector and their publickly available pre-trained model and code. 
+[PointRCNN](https://github.com/sshaoshuai/PointRCNN) for the amazing object detector and their publicly available pre-trained model and code. 
 
 [Kitti2bag](https://github.com/tomas789/kitti2bag) for tool to convert KITTI raw data to rosbag
 
