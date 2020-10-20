@@ -4,6 +4,7 @@ Ability to detect cars in any KITTI rosbag using PointRCNN detections. Able to v
 ![PointRCNN dets](pointrcnn_dets.png) 
 
 # Requirements
+* Ubuntu 18.04
 * Pytorch 1.0
 * ROS Melodic 
 * Python 3+
@@ -54,7 +55,7 @@ Then run the script to build the environment with cv bridge and python3.
     Place the rosbag in pointrcnn_detector_ros/data/kitti_2011_09_26_drive_0011_synced.bag
 
 
-    For now, I have hardcoded the launch of this specific rosbag, but you can just modify the roslaunch file and change it to your own rosbag.
+    For now, I have hardcoded the launch of this specific rosbag, but you can just modify the roslaunch file and change it to your own rosbag. If you use a different rosbag, make sure you also change the calibration file to match that specific rosbag.
 
 * Pre-trained model: You can obtained pre - trained model from the PointRCNN repo [here](https://drive.google.com/file/d/1aapMXBkSn5c5hNTDdRNI74Ptxfny7PuC/view). 
 
